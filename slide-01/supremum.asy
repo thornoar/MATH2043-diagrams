@@ -3,7 +3,7 @@ include common;
 config.drawing.drawnow = true;
 usepackage("xcolor", "dvipsnames");
 
-size(12cm);
+size(x = textwidth);
 
 real maxlen = 2;
 
@@ -22,10 +22,10 @@ pair notpos = (.5, -.2);
 string notlab = minipage("
 {\color{red}{not}} upper\\
 bounds of $[0,1)$
-", width = 2.8cm);
+", width = 2.5cm);
 frame f;
 smooth not = smooth(
-    contour = scale(.0068)*box(f, Label(notlab)),
+    contour = scale(.0064)*box(f, Label(notlab)),
     label = notlab,
     labeldir = (0,0),
     labelalign = (0,0)
@@ -36,11 +36,11 @@ smooth not = smooth(
 pair indeedpos = (1.5, .2);
 string indeedlab = minipage("
 {\color{ForestGreen}{all}} upper\\
-bounds of $[0,1)$
-", width = 2.8cm);
+bounds of $\mathrm{[0,1)}$
+", width = 2.5cm);
 frame f;
 smooth indeed = smooth(
-    contour = scale(.0068)*box(f, Label(indeedlab)),
+    contour = scale(.0064)*box(f, Label(indeedlab)),
     label = indeedlab,
     labeldir = (0,0),
     labelalign = (0,0)

@@ -1,7 +1,10 @@
-defaultpen(0.5pt + fontsize(12pt));
-usepackage("amsmath");
-usepackage("amssymb");
-// usepackage("tempora");
+defaultpen(0.5pt + fontsize(10.5pt));
+texpreamble("
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{charter}
+\usepackage{microtype}
+");
 
 import smoothmanifold;
 config.system.insertdollars = false;
@@ -12,3 +15,5 @@ config.drawing.subsetfill = new pen[]{};
 config.arrow.absmargins = true;
 config.arrow.mar = 0.02;
 config.arrow.currentarrow = DeferredArrow(SimpleHead, arc = false, angle = 10);
+
+real textwidth = 5.3 inches;
