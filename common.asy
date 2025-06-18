@@ -8,8 +8,8 @@ texpreamble("
 
 import smoothmanifold;
 config.system.insertdollars = false;
-config.paths.neighheight = .1;
-config.paths.neighwidth = .02;
+config.paths.neighheight = .07;
+config.paths.neighwidth = .03;
 config.drawing.smoothfill = nullpen;
 config.drawing.subsetfill = new pen[]{};
 config.arrow.absmargins = true;

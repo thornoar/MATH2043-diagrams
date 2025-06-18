@@ -1,4 +1,6 @@
 include common;
+config.paths.neighheight = .1;
+config.paths.neighwidth = .02;
 
 config.drawing.drawnow = true;
 usepackage("xcolor", "dvipsnames");
@@ -11,8 +13,8 @@ draw((-.1,0) -- (0,0));
 
 draw((0,0) -- (1,0), red);
 
-dot(0, L = Label("0", align = S));
-draw(neigharc(1, dir = -1), L = Label("1", position = MidPoint, align = S+.7*E));
+dot(0, L = Label("$0$", align = S));
+draw(neigharc(1, dir = -1), L = Label("$1$", position = MidPoint, align = S+.7*E));
 
 dot((1,0), heavygreen);
 draw((1,0)--(maxlen,0), linewidth(.7) + heavygreen);
