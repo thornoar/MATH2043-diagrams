@@ -5,11 +5,6 @@ size(.8*textwidth);
 real xmax = 7;
 draw((.5,0) -- (xmax, 0));
 real[] s = {1, 3.5, 4, 4.3, 4.6, 5.4};
-void drawneigh (real l, real r, real h = 0, pen p) {
-    draw((l, h) -- (r, h), p);
-    draw(shift((0,h))*neigharc(l), p);
-    draw(shift((0,h))*neigharc(r, dir = -1), p);
-}
 for (int i = 0; i < s.length-1; i += 2)
 {
     drawneigh(s[i], s[i+1], heavygreen);
