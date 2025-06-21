@@ -4,6 +4,8 @@ texpreamble("
 \usepackage{amssymb}
 \usepackage{charter}
 \usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{avant}
 ");
 
 import smoothmanifold;
